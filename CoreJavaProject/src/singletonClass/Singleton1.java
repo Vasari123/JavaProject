@@ -7,7 +7,7 @@ public class Singleton1 {
         System.out.println("Singleton instance created by " + Thread.currentThread().getName());
     }
 
-    public static  Singleton1 getSingleton() {
+    public static Singleton1 getSingleton() {
         if (singleton == null) {
             singleton = new Singleton1();
         }

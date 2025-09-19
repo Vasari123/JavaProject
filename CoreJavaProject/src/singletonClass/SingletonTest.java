@@ -2,7 +2,7 @@ package singletonClass;
 
 public class SingletonTest {
     public static void main(String[] args) {
-        Runnable runnable = () ->{
+        Runnable runnable = () -> {
             Singleton singleton = Singleton.getSingleton();
             singleton.showMessage();
         };
