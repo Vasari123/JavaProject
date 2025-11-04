@@ -2,7 +2,9 @@ package map;
 
 import java.util.HashMap;
 import java.util.Map;
+/*
 
+ */
 
 public class HashMapExample {
     public static void main(String[] args) throws InterruptedException {
