@@ -10,9 +10,15 @@ public class TransformElementsWithCount {
         List<Integer> transformedElements = input.stream().map(n -> n.equals("0") ? 0 : 1).toList();
         System.out.println("Transformed elements " + transformedElements);
 
+/*
         int indexZero = transformedElements.indexOf(0);
         long transformedCount = IntStream.range(0, indexZero == -1 ? transformedElements.size() : indexZero)
                 .mapToObj(transformedElements::get)
+                .filter(n -> n == 1)
+                .count();
+*/
+
+        long transformedCount = transformedElements.stream()
                 .filter(n -> n == 1)
                 .count();
         System.out.println("Count after transformed " + transformedCount);
